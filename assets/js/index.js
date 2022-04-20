@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const generateReadMe = ({ projectName, projectDescription, projectLicense, projectRepo, username, projectInstallation, projectUse, projectContribute, projectTest, projectTechnologies, email }) =>
 
-`# ${data.projectName}
+`# ${projectName}
 
 ## Table of Contents
 
@@ -13,24 +13,44 @@ const generateReadMe = ({ projectName, projectDescription, projectLicense, proje
 4. [Technologies](#Technologies)
 5. [Installation](#Installation)
 6. [Usage](#Usage)
-7. [Screenshots](#Screenshots)
-8. [Questions](#Questions)
+7. [Test](#Test)
+8. [Contribution](#Contributions)
+9. [Questions](#Questions)
 
 ## Description
 
+${projectDescription}
+
 ## License
+
+${projectLicense}
 
 ## Technologies
 
+${projectTechnologies}
+
 ## Installation
+
+${projectInstallation}
 
 ## Usage
 
-## Screenshots
+${projectUse}
+
+## Test
+
+${projectTest}
+
+## Contribution
+
+${projectContribute}
 
 ## Questions
 
-`
+Check out my GitHub page by searching for my username ${username} in GitHub or by clicking on this [link](https://github.com/${username}) to access my profile directly.
+
+For any questions about this project or any other inquiries, please email me at [${email}](mailto:${email}).`;
+
 inquirer
   .prompt([
     {
@@ -51,7 +71,7 @@ inquirer
     },
     {
         type: "input",
-        message: "Enther the name of the GitHub repository.",
+        message: "Enter the name of the GitHub repository.",
         name: "projectRepo"
     },
     {
