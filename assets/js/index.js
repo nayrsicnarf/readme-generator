@@ -1,6 +1,36 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const generateReadMe = ({ projectName, projectDescription, projectLicense, projectRepo, username, projectInstallation, projectUse, projectContribute, projectTest, projectTechnologies, email }) =>
+
+`# ${data.projectName}
+
+## Table of Contents
+
+1. [Description](#Description)
+2. [GitHub Repo and Pages](#GitHub-Repo-and-Pages)
+3. [License](#License)
+4. [Technologies](#Technologies)
+5. [Installation](#Installation)
+6. [Usage](#Usage)
+7. [Screenshots](#Screenshots)
+8. [Questions](#Questions)
+
+## Description
+
+## License
+
+## Technologies
+
+## Installation
+
+## Usage
+
+## Screenshots
+
+## Questions
+
+`
 inquirer
   .prompt([
     {
@@ -57,7 +87,7 @@ inquirer
     {
         type: "input",
         message: "Enter your email address.",
-        name: "userEmail"
+        name: "email"
     },
   ])
 
