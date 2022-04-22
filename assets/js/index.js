@@ -3,8 +3,26 @@ const fs = require('fs');
 
 const generateReadMe = ({ projectName, projectDescription, projectLicense, projectRepo, username, projectInstallation, projectUse, projectContribute, projectTest, projectTechnologies, email }) => {
 
-    if (!projectName) {
-        console.error("Project name not defined.");
+    if (projectLicense === "Eclipse Public License 1.0") {
+        badgeLicense = "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)";
+    } else if (projectLicense === "BSD 2-Clause") {
+        badgeLicense = "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)";
+    } else if (projectLicense === "BSD 3-Clause") {
+        badgeLicense = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+    } else if (projectLicense === "MIT") {
+        badgeLicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else if (projectLicense === "GNU GPL v3") {
+        badgeLicense = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+    } else if (projectLicense === "Mozilla") {
+        badgeLicense = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+    } else if (projectLicense === "ISC") {
+        badgeLicense = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+    } else if (projectLicense === "Apache 2.0") {
+        badgeLicense = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    }
+
+    if (!projectName || !projectDescription || !projectLicense || !projectRepo || !username || !projectInstallation || !projectUse || !projectContribute || !projectTest || !projectTechnologies || !email) {
+        console.error("Input(s) are invalid.");
         return;
     }
 
@@ -33,6 +51,7 @@ const generateReadMe = ({ projectName, projectDescription, projectLicense, proje
     ## License
     
     ${projectLicense}
+    ${badgeLicense}
     
     ## Technologies
     
@@ -56,7 +75,7 @@ const generateReadMe = ({ projectName, projectDescription, projectLicense, proje
     
     ## Questions
     
-    Check out my GitHub page by searching for my username ${username} in GitHub or by clicking on this [link](https://github.com/${username}) to access my profile directly.
+    Check out my GitHub page by searching for my username "${username}" in GitHub or by clicking on this [link](https://github.com/${username}) to access my profile directly.
     
     For any questions about this project or any other inquiries, please email me at [${email}](mailto:${email}).`);
 }
@@ -76,7 +95,7 @@ inquirer
         {
             type: "list",
             message: "What kind of license should your project have?",
-            choices: ["MIT", "Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "Eclipse Public", "GNU", "Mozilla", "ISC"],
+            choices: ["Eclipse Public License 1.0", "BSD 2-Clause", "BSD 3-Clause", "MIT", "GNU GPL v3", "Mozilla", "ISC", "Apache 2.0",],
             name: "projectLicense"
         },
         {
