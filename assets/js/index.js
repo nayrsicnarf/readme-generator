@@ -28,56 +28,56 @@ const generateReadMe = ({ projectName, projectDescription, projectLicense, proje
 
     return (`# ${projectName}
     
-    ## Table of Contents
-    
-    1. [Description](#Description)
-    2. [GitHub Repository and Deployment](#GitHub-Repository-and-Deployment)
-    3. [License](#License)
-    4. [Technologies](#Technologies)
-    5. [Installation](#Installation)
-    6. [Usage](#Usage)
-    7. [Test](#Test)
-    8. [Contribution](#Contributions)
-    9. [Questions](#Questions)
-    
-    ## Description
-    
-    ${projectDescription}
-    
-    ## GitHub Repository and Deployment
-    
-    ${projectRepo}
-    
-    ## License
-    
-    ${projectLicense}
-    ${badgeLicense}
-    
-    ## Technologies
-    
-    ${projectTechnologies}
-    
-    ## Installation
-    
-    ${projectInstallation}
-    
-    ## Usage
-    
-    ${projectUse}
-    
-    ## Test
-    
-    ${projectTest}
-    
-    ## Contribution
-    
-    ${projectContribute}
-    
-    ## Questions
-    
-    Check out my GitHub page by searching for my username "${username}" in GitHub or by clicking on this [link](https://github.com/${username}) to access my profile directly.
-    
-    For any questions about this project or any other inquiries, please email me at [${email}](mailto:${email}).`);
+## Table of Contents
+
+1. [Description](#Description)
+2. [GitHub Repository and Deployment](#GitHub-Repository-and-Deployment)
+3. [License](#License)
+4. [Technologies](#Technologies)
+5. [Installation](#Installation)
+6. [Usage](#Usage)
+7. [Test](#Test)
+8. [Contribution](#Contributions)
+9. [Questions](#Questions)
+
+## Description
+
+${projectDescription}
+
+## GitHub Repository and Deployment
+
+${projectRepo}
+
+## License
+
+${projectLicense}
+${badgeLicense}
+
+## Technologies
+
+${projectTechnologies}
+
+## Installation
+
+${projectInstallation}
+
+## Usage
+
+${projectUse}
+
+## Test
+
+${projectTest}
+
+## Contribution
+
+${projectContribute}
+
+## Questions
+
+Check out my GitHub page by searching for my username "${username}" in GitHub or by clicking on this [link](https://github.com/${username}/) to access my profile directly.
+
+For any questions about this project or any other inquiries, please email me at my [email](mailto:${email}).`);
 }
 
 inquirer
@@ -143,7 +143,7 @@ inquirer
     .then((answers) => {
         const mdPageContent = generateReadMe(answers);
 
-        fs.writeFile('README.md', mdPageContent, (err) =>
-            err ? console.log(err) : console.log('Successfully created README.md')
+        fs.writeFile('Generated-README.md', mdPageContent, (err) =>
+            err ? console.log(err) : console.log('Successfully generated README.md')
         );
     });
