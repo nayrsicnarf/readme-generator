@@ -145,6 +145,6 @@ inquirer
         const mdPageContent = generateReadMe(answers);
 
         fs.writeFile('README-Generate.md', mdPageContent, (err) =>
-            err ? console.log(err) : console.log('Successfully generated README.md')
+            err ? console.log(err) : console.log('Successfully generated README-Generate.md')
         );
     });
