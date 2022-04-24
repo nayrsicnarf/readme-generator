@@ -30,15 +30,15 @@ const generateReadMe = ({ projectName, projectDescription, projectLicense, proje
     
 ## Table of Contents
 
-1. [Description](#Description)
-2. [GitHub Repository and Deployment](#GitHub-Repository-and-Deployment)
-3. [License](#License)
-4. [Technologies](#Technologies)
-5. [Installation](#Installation)
-6. [Usage](#Usage)
-7. [Test](#Test)
-8. [Contribution](#Contributions)
-9. [Questions](#Questions)
+- [Description](#Description)
+- [GitHub Repository and Deployment](#GitHub-Repository-and-Deployment)
+- [License](#License)
+- [Technologies](#Technologies)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Test](#Test)
+- [Contribution](#Contributions)
+- [Questions](#Questions)
 
 ## Description
 
@@ -95,7 +95,7 @@ inquirer
         },
         {
             type: "list",
-            message: "What kind of license should your project have?",
+            message: "What kind of license does your project have?",
             choices: ["Eclipse Public License 1.0", "BSD 2-Clause", "BSD 3-Clause", "MIT", "GNU GPL v3", "Mozilla", "ISC", "Apache 2.0",],
             name: "projectLicense"
         },
@@ -131,7 +131,7 @@ inquirer
         },
         {
             type: "input",
-            message: "Enter the technologies that used in this project",
+            message: "Enter the technologies that used in this project.",
             name: "projectTechnologies"
         },
         {
