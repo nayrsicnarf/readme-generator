@@ -51,6 +51,7 @@ ${projectRepo}
 ## License
 
 ${projectLicense}
+
 ${badgeLicense}
 
 ## Technologies
@@ -77,7 +78,7 @@ ${projectContribute}
 
 Check out my GitHub page by searching for my username "${username}" in GitHub or by clicking on this [link](https://github.com/${username}/) to access my profile directly.
 
-For any questions about this project or any other inquiries, please email me at my [email](mailto:${email}).`);
+For any questions about this project or any other inquiries, please contact through [email](mailto:${email}) and I will get back to you at my earliest convenience.`);
 }
 
 inquirer
@@ -143,7 +144,7 @@ inquirer
     .then((answers) => {
         const mdPageContent = generateReadMe(answers);
 
-        fs.writeFile('Generated-README.md', mdPageContent, (err) =>
+        fs.writeFile('README-Generate.md', mdPageContent, (err) =>
             err ? console.log(err) : console.log('Successfully generated README.md')
         );
     });
