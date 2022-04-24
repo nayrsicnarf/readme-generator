@@ -5,7 +5,7 @@
 - [README Generator](#readme-generator)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
-  - [GitHub Repository and Page](#github-repository-and-page)
+  - [GitHub Repository and Video Demo](#github-repository-and-video-demo)
   - [Technologies](#technologies)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -16,19 +16,21 @@
 
 The goal of this assignment is to create 
 
-## GitHub Repository and Page
+## GitHub Repository and Video Demo
 
-- [GitHub Repository]()
+- [GitHub Repository](https://github.com/nayrsicnarf/readme-generator.git)
 
-- [GitHub Page]()
+- [Video Demonstration](https://drive.google.com/file/d/1AKITFLtFCr2ygitW5MQhEyNbBFI5zBGN/view?usp=sharing)
 
 ## Technologies
 
 - [JavaScript](https://www.w3schools.com/js/)
+- [Node.js](https://nodejs.org/en/docs/)
+- [Git](https://git-scm.com/doc)
 
 ## Installation
 
-To view this webpage on a local machine, pull the code from [GitHub]() using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
+To view this webpage on a local machine, pull the code from [GitHub](https://github.com/nayrsicnarf/readme-generator.git) using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
 
 - Operating System: macOS Monterey Version 21.1
 - Visual Studio Code: Version 1.64.2
@@ -37,11 +39,11 @@ To view this webpage on a local machine, pull the code from [GitHub]() using Ter
 
 ## Usage
 
-To view the completed project, visit my [GitHub Page]() or refer to the [Installation](#installation) section of this README.
+To view the completed project, visit my [GitHub](https://github.com/nayrsicnarf/readme-generator.git) or refer to the [Installation](#installation) section of this README.
 
 ## Screenshot
 
-![Work Day Scheduler]()
+![README Screenshot](assets/images/readme-ss.png)
 
 ## Credits
 
@@ -50,5 +52,4 @@ This was the tenth homework assignment as part of the [University of Washington 
 - [Google](https://www.google.com/)
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
 - [JavaScript Tutorial](https://www.javascripttutorial.net/)
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
