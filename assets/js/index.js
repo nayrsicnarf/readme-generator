@@ -46,7 +46,7 @@ ${projectDescription}
 
 ## GitHub Repository and Deployment
 
-${projectRepo}
+[${projectRepo}](https://github.com/${username}/) 
 
 ## License
 
