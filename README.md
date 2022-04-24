@@ -43,7 +43,8 @@ To view the completed project, visit my [GitHub](https://github.com/nayrsicnarf/
 
 ## Screenshot
 
-![README Screenshot](assets/images/readme-ss.png)
+![Terminal Screenshot](assets/images/readme-ss.png)
+![README Generate Screenshot](assets/images/README-Generate-ss.png)
 
 ## Credits
 
