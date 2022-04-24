@@ -14,11 +14,11 @@
 
 ## Description
 
-Using Node.js, the user will answer a eries of questions which will result in a README.md file being created with the user's inputs.
+Using Node.js, the user will answer a series of questions which will result in a README.md file being created with the user's inputs.
 
 ## GitHub Repository and Deployment
 
-readme-generator
+[readme-generator](https://github.com/nayrsicnarf/) 
 
 ## License
 
@@ -28,11 +28,11 @@ ISC
 
 ## Technologies
 
-The technologies used were JavaScript, Node.js, and Git.
+The technologies used were JavaScript, Node.js and Git.
 
 ## Installation
 
-The user should clone the repository from GitHub. This will save on the user's local machine.
+The user should clone the repository from GitHub.
 
 ## Usage
 
@@ -40,7 +40,7 @@ The user should open a Terminal (Mac) or Git Bash (Windows) window and run "node
 
 ## Test
 
-To test the project, run "node index.js" and answer the series of questions to see if a README.md file is created with the correct inputs.
+To test the project, run "node index.js" and answer the series of questions in order to see if a README.md file is created with the correct inputs.
 
 ## Contribution
 

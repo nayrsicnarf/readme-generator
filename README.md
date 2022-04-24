@@ -14,13 +14,13 @@
 
 ## Description
 
-The goal of this assignment is to create 
+The goal of this assignment is to use Node.js to create a README.md file. This is done by the user answering a series of questions in the command line which will output a professional README based off the user's inputs.
 
 ## GitHub Repository and Video Demo
 
 - [GitHub Repository](https://github.com/nayrsicnarf/readme-generator.git)
 
-- [Video Demonstration](https://drive.google.com/file/d/1AKITFLtFCr2ygitW5MQhEyNbBFI5zBGN/view?usp=sharing)
+- [Video Demonstration](https://drive.google.com/drive/folders/1gbTytcXoeqeNT_O6-ym3n48N7GQVcvof?usp=sharing)
 
 ## Technologies
 
